@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Test Cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C12</id>
+				<title>Перевірка відправлення форми не вказавши данних</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+								<assignedto>Viktoriia Viktoriia</assignedto>
+												<estimate>240</estimate>
+																								<references></references>
+												<labels>personal</labels>
+								<automation>No automation attached</automation>
+												<custom>
+											<automation_type><id>0</id><value> None</value></automation_type>
+											<is_automated>false</is_automated>
+											<steps>&lt;p&gt;1. Перейти на сайт &lt;a data-fr-linked=&quot;true&quot; href=&quot;https://zezman.ua/&quot; data-pasted=&quot;true&quot;&gt;https://zezman.ua/&lt;/a&gt;&lt;br&gt;2. Внизу сторінки знайти тему &quot;Звʼязатись з нами&quot;&lt;br&gt;3. Відкрити &quot;Форма зворотнього звʼязку&quot;&lt;br&gt;4. Не вівши дані, натиснути &quot;Відправити&quot;&lt;/p&gt;</steps>
+											<expected>&lt;p&gt;Форма не відправляється без даних&lt;/p&gt;</expected>
+									</custom>
+								<is_converted>1</is_converted>
+			</case>
+															<case>
+				<id>C13</id>
+				<title>Перевірка відправлення форма вказавши тільки невалідний номер телефону</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+								<assignedto>Viktoriia Viktoriia</assignedto>
+												<estimate>240</estimate>
+																								<references></references>
+												<labels>personal</labels>
+								<automation>No automation attached</automation>
+												<custom>
+											<automation_type><id>0</id><value> None</value></automation_type>
+											<is_automated>false</is_automated>
+											<steps>&lt;p&gt;1. Перейти на сайт &lt;a data-fr-linked=&quot;true&quot; href=&quot;https://zezman.ua/&quot; data-pasted=&quot;true&quot;&gt;https://zezman.ua/&lt;/a&gt;&lt;br&gt;2. Внизу сторінки знайти тему &quot;Звʼязатись з нами&quot;&lt;br&gt;3. Відкрити &quot;Форма зворотнього звʼязку&quot;&lt;br&gt;4. Заповнити лише номер телефону: 38(676)767&lt;br&gt;5. Натискаємо &quot;Відправити&quot;&lt;/p&gt;</steps>
+											<expected>&lt;p&gt;Форма не відправляється, &quot;Введіть правильний номер телефону&quot;&lt;/p&gt;</expected>
+									</custom>
+								<is_converted>1</is_converted>
+			</case>
+															<case>
+				<id>C14</id>
+				<title>Перевірка відправки форми вказавши тільки валідний номер телефону</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+								<assignedto>Viktoriia Viktoriia</assignedto>
+												<estimate>240</estimate>
+																								<references></references>
+												<labels>personal</labels>
+								<automation>No automation attached</automation>
+												<custom>
+											<automation_type><id>0</id><value> None</value></automation_type>
+											<is_automated>false</is_automated>
+											<steps>&lt;p&gt;1. Перейти на сайт &lt;a data-fr-linked=&quot;true&quot; href=&quot;https://zezman.ua/&quot; data-pasted=&quot;true&quot;&gt;https://zezman.ua/&lt;/a&gt;&lt;br&gt;2. Внизу сторінки знайти тему &quot;Звʼязатись з нами&quot;&lt;br&gt;3. Відкрити &quot;Форма зворотнього звʼязку&quot;&lt;br&gt;4. Ввести лише валідний номер телефону: 38(067)767-44-44&lt;br&gt;5. &quot;Відправити&quot;&lt;/p&gt;</steps>
+											<expected>&lt;p&gt;Форма не відправляється, потрібно ввести також електронну пошту&lt;/p&gt;</expected>
+									</custom>
+								<is_converted>1</is_converted>
+			</case>
+															<case>
+				<id>C15</id>
+				<title>Перевірка відправки форми вказавши тільки невалідну електронну пошту</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+								<assignedto>Viktoriia Viktoriia</assignedto>
+												<estimate>240</estimate>
+																								<references></references>
+												<labels>personal</labels>
+								<automation>No automation attached</automation>
+												<custom>
+											<automation_type><id>0</id><value> None</value></automation_type>
+											<is_automated>false</is_automated>
+											<steps>&lt;p&gt;1. Перейти на сайт &lt;a data-fr-linked=&quot;true&quot; href=&quot;https://zezman.ua/&quot; data-pasted=&quot;true&quot;&gt;https://zezman.ua/&lt;/a&gt;&lt;br&gt;2. Внизу сторінки знайти тему &quot;Звʼязатись з нами&quot;&lt;br&gt;3. Відкрити &quot;Форма зворотнього звʼязку&quot;&lt;br&gt;4. Вказати  невалідну електронну пошту: араррараар&lt;br&gt;5. &quot;Відправити&quot;&lt;/p&gt;</steps>
+											<expected>&lt;p&gt;Форма невідправляється, потрібно ввести номер телефона також&lt;/p&gt;</expected>
+									</custom>
+								<is_converted>1</is_converted>
+			</case>
+															<case>
+				<id>C16</id>
+				<title>Перевірка відправки форми вказавши тільки валідну електронну пошту</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+								<assignedto>Viktoriia Viktoriia</assignedto>
+												<estimate>240</estimate>
+																								<references></references>
+												<labels>personal</labels>
+								<automation>No automation attached</automation>
+												<custom>
+											<automation_type><id>0</id><value> None</value></automation_type>
+											<is_automated>false</is_automated>
+											<steps>&lt;p&gt;1. Перейти на сайт &lt;a data-fr-linked=&quot;true&quot; href=&quot;https://zezman.ua/&quot; data-pasted=&quot;true&quot;&gt;https://zezman.ua/&lt;/a&gt;&lt;br&gt;2. Внизу сторінки знайти тему &quot;Звʼязатись з нами&quot;&lt;br&gt;3. Відкрити &quot;Форма зворотнього звʼязку&quot;&lt;br&gt;4. Вказати валідну електронну пошту: &lt;a data-fr-linked=&quot;true&quot; href=&quot;mailto:ghr@gmail.com&quot; data-pasted=&quot;true&quot;&gt;ghr@gmail.com&lt;/a&gt;&lt;/p&gt;</steps>
+											<expected>&lt;p&gt;&lt;span style=&apos;color: rgb(32, 32, 32); font-family: Arial, -apple-system, &quot;system-ui&quot;, system-ui, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(234, 241, 247); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none&apos; data-pasted=&quot;true&quot;&gt;Форма невідправляється, потрібно ввести номер телефона також&lt;/span&gt;&lt;/p&gt;</expected>
+									</custom>
+								<is_converted>1</is_converted>
+			</case>
+															<case>
+				<id>C17</id>
+				<title>Перевірка відправки форми вказавши номер телефона та email</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+								<assignedto>Viktoriia Viktoriia</assignedto>
+												<estimate>240</estimate>
+																								<references></references>
+												<labels>personal</labels>
+								<automation>No automation attached</automation>
+												<custom>
+											<automation_type><id>0</id><value> None</value></automation_type>
+											<is_automated>false</is_automated>
+											<steps>&lt;p&gt;&lt;span style=&apos;color: rgb(32, 32, 32); font-family: Arial, -apple-system, &quot;system-ui&quot;, system-ui, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(234, 241, 247); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none&apos; data-pasted=&quot;true&quot;&gt;1. Перейти на сайт &lt;/span&gt;&lt;a data-fr-linked=&quot;true&quot; href=&quot;https://zezman.ua/&quot; data-pasted=&quot;true&quot; style=&apos;margin: 0px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-weight: 400; font-stretch: inherit; font-size: 14px; line-height: inherit; font-family: Arial, -apple-system, &quot;system-ui&quot;, system-ui, sans-serif; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; vertical-align: baseline; outline: 0px; text-decoration: none; color: rgb(89, 147, 188); background-color: rgb(234, 241, 247); cursor: pointer; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal&apos;&gt;https://zezman.ua/&lt;/a&gt;&lt;br style=&quot;color: rgb(32, 32, 32); font-family: Arial, -apple-system, &quot; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(234, 241, 247); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial&quot;&gt;&lt;span style=&apos;color: rgb(32, 32, 32); font-family: Arial, -apple-system, &quot;system-ui&quot;, system-ui, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(234, 241, 247); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none&apos;&gt;2. Внизу сторінки знайти тему &quot;Звʼязатись з нами&quot;&lt;/span&gt;&lt;br style=&quot;color: rgb(32, 32, 32); font-family: Arial, -apple-system, &quot; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(234, 241, 247); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial&quot;&gt;&lt;span style=&apos;color: rgb(32, 32, 32); font-family: Arial, -apple-system, &quot;system-ui&quot;, system-ui, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(234, 241, 247); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none&apos;&gt;3. Відкрити &quot;Форма зворотнього звʼязку&quot;&lt;/span&gt;&lt;br&gt;&lt;span style=&apos;color: rgb(32, 32, 32); font-family: Arial, -apple-system, &quot;system-ui&quot;, system-ui, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(234, 241, 247); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none&apos;&gt;4. Вказати номер телефона: 38(066)666-66-66&lt;/span&gt;&lt;br&gt;&lt;span style=&apos;color: rgb(32, 32, 32); font-family: Arial, -apple-system, &quot;system-ui&quot;, system-ui, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(234, 241, 247); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none&apos;&gt;    Email: &lt;a data-fr-linked=&quot;true&quot; href=&quot;mailto:ghr@gmail.com&quot; data-pasted=&quot;true&quot;&gt;ghr@gmail.com&lt;/a&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&apos;color: rgb(32, 32, 32); font-family: Arial, -apple-system, &quot;system-ui&quot;, system-ui, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(234, 241, 247); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none&apos;&gt;    Підтвердити ознайомлення з Політикою конфіденційності&lt;/span&gt;&lt;/p&gt;</steps>
+											<expected>&lt;p&gt;Форма відправилась&lt;/p&gt;</expected>
+									</custom>
+								<is_converted>1</is_converted>
+			</case>
+															<case>
+				<id>C18</id>
+				<title>Перевірка відправки форма, вказавши імʼя, номер телефону, email</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+								<assignedto>Viktoriia Viktoriia</assignedto>
+												<estimate>240</estimate>
+																								<references></references>
+												<labels>personal</labels>
+								<automation>No automation attached</automation>
+												<custom>
+											<automation_type><id>0</id><value> None</value></automation_type>
+											<is_automated>false</is_automated>
+											<steps>&lt;p&gt;&lt;span data-pasted=&quot;true&quot; style=&apos;margin: 0px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-weight: 400; font-stretch: inherit; font-size: 14px; line-height: inherit; font-family: Arial, -apple-system, &quot;system-ui&quot;, system-ui, sans-serif; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; vertical-align: baseline; color: rgb(32, 32, 32); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; background-color: rgb(234, 241, 247); float: none; display: inline !important&apos;&gt;1. Перейти на сайт &lt;/span&gt;&lt;a data-fr-linked=&quot;true&quot; href=&quot;https://zezman.ua/&quot; data-pasted=&quot;true&quot; style=&apos;margin: 0px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-weight: 400; font-stretch: inherit; font-size: 14px; line-height: inherit; font-family: Arial, -apple-system, &quot;system-ui&quot;, system-ui, sans-serif; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; vertical-align: baseline; outline: 0px; text-decoration: none; color: rgb(89, 147, 188); background-color: rgb(234, 241, 247); cursor: pointer; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal&apos;&gt;https://zezman.ua/&lt;/a&gt;&lt;br style=&quot;color: rgb(32, 32, 32); font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(234, 241, 247); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-family: Arial, -apple-system, &quot; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(234, 241, 247); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial&amp;quot&quot;&gt;&lt;span style=&apos;margin: 0px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-weight: 400; font-stretch: inherit; font-size: 14px; line-height: inherit; font-family: Arial, -apple-system, &quot;system-ui&quot;, system-ui, sans-serif; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; vertical-align: baseline; color: rgb(32, 32, 32); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; background-color: rgb(234, 241, 247); float: none; display: inline !important&apos;&gt;2. Внизу сторінки знайти тему &quot;Звʼязатись з нами&quot;&lt;/span&gt;&lt;br style=&quot;color: rgb(32, 32, 32); font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(234, 241, 247); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-family: Arial, -apple-system, &quot; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(234, 241, 247); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial&amp;quot&quot;&gt;&lt;span style=&apos;margin: 0px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-weight: 400; font-stretch: inherit; font-size: 14px; line-height: inherit; font-family: Arial, -apple-system, &quot;system-ui&quot;, system-ui, sans-serif; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; vertical-align: baseline; color: rgb(32, 32, 32); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; background-color: rgb(234, 241, 247); float: none; display: inline !important&apos;&gt;3. Відкрити &quot;Форма зворотнього звʼязку&quot;&lt;/span&gt;&lt;br style=&quot;color: rgb(32, 32, 32); font-family: Arial, -apple-system, &quot; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(234, 241, 247); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial&quot;&gt;&lt;span style=&apos;margin: 0px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-weight: 400; font-stretch: inherit; font-size: 14px; line-height: inherit; font-family: Arial, -apple-system, &quot;system-ui&quot;, system-ui, sans-serif; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; vertical-align: baseline; color: rgb(32, 32, 32); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; background-color: rgb(234, 241, 247); float: none; display: inline !important&apos;&gt;4. Вказати імʼя: прооо&lt;/span&gt;&lt;br&gt;&lt;span style=&apos;margin: 0px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-weight: 400; font-stretch: inherit; font-size: 14px; line-height: inherit; font-family: Arial, -apple-system, &quot;system-ui&quot;, system-ui, sans-serif; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; vertical-align: baseline; color: rgb(32, 32, 32); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; background-color: rgb(234, 241, 247); float: none; display: inline !important&apos;&gt;    Номер телефона: 38(066)666-66-66&lt;/span&gt;&lt;br style=&quot;color: rgb(32, 32, 32); font-family: Arial, -apple-system, &quot; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(234, 241, 247); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial&quot;&gt;&lt;span style=&apos;margin: 0px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-weight: 400; font-stretch: inherit; font-size: 14px; line-height: inherit; font-family: Arial, -apple-system, &quot;system-ui&quot;, system-ui, sans-serif; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; vertical-align: baseline; color: rgb(32, 32, 32); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; background-color: rgb(234, 241, 247); float: none; display: inline !important&apos;&gt;    Email: &lt;a data-fr-linked=&quot;true&quot; href=&quot;mailto:ghr@gmail.com&quot; data-pasted=&quot;true&quot; style=&quot;margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; outline: 0px; text-decoration: none; color: inherit; background-color: transparent; cursor: pointer&quot;&gt;ghr@gmail.com&lt;/a&gt;&lt;/span&gt;&lt;br style=&quot;color: rgb(32, 32, 32); font-family: Arial, -apple-system, &quot; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(234, 241, 247); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial&quot;&gt;&lt;span style=&apos;margin: 0px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-weight: 400; font-stretch: inherit; font-size: 14px; line-height: inherit; font-family: Arial, -apple-system, &quot;system-ui&quot;, system-ui, sans-serif; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; vertical-align: baseline; color: rgb(32, 32, 32); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; background-color: rgb(234, 241, 247); float: none; display: inline !important&apos;&gt;    Підтвердити ознайомлення з Політикою конфіденційност&lt;/span&gt;&lt;/p&gt;</steps>
+											<expected>&lt;p&gt;Успішно&lt;/p&gt;</expected>
+									</custom>
+								<is_converted>1</is_converted>
+			</case>
+															<case>
+				<id>C19</id>
+				<title>Перевірка розміру кнопки &quot;Відправити&quot;</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+								<assignedto>Viktoriia Viktoriia</assignedto>
+												<estimate>240</estimate>
+																								<references></references>
+												<labels>buttomn</labels>
+								<automation>No automation attached</automation>
+												<custom>
+											<automation_type><id>0</id><value> None</value></automation_type>
+											<is_automated>false</is_automated>
+											<steps>&lt;p&gt;Перевірити розмір кнопки через Devtools&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</steps>
+											<expected>&lt;p&gt;555x18&lt;/p&gt;</expected>
+									</custom>
+								<is_converted>1</is_converted>
+			</case>
+															<case>
+				<id>C20</id>
+				<title>Перевірка кольору кнопки &quot;Відправити&quot;</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+								<assignedto>Viktoriia Viktoriia</assignedto>
+												<estimate>240</estimate>
+																								<references></references>
+												<labels>color</labels>
+								<automation>No automation attached</automation>
+												<custom>
+											<automation_type><id>0</id><value> None</value></automation_type>
+											<is_automated>false</is_automated>
+											<steps>&lt;p&gt;Перевірити колір &lt;/p&gt;</steps>
+											<expected>&lt;p&gt;Білі букви на фіолетовому фоні&lt;/p&gt;</expected>
+									</custom>
+								<is_converted>1</is_converted>
+			</case>
+															<case>
+				<id>C21</id>
+				<title>Перевірка розміру поля &quot;email&quot;</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+								<assignedto>Viktoriia Viktoriia</assignedto>
+												<estimate>240</estimate>
+																								<references></references>
+												<labels>search</labels>
+								<automation>No automation attached</automation>
+												<custom>
+											<automation_type><id>0</id><value> None</value></automation_type>
+											<is_automated>false</is_automated>
+											<steps>&lt;p&gt;Перевірити розмір&lt;/p&gt;</steps>
+											<expected>&lt;p&gt;589х54&lt;/p&gt;</expected>
+									</custom>
+								<is_converted>1</is_converted>
+			</case>
+															<case>
+				<id>C22</id>
+				<title>Перевірка розміру поля &quot;Номер телефона&quot;</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+								<assignedto>Viktoriia Viktoriia</assignedto>
+												<estimate>240</estimate>
+																								<references></references>
+												<labels>search</labels>
+								<automation>No automation attached</automation>
+												<custom>
+											<automation_type><id>0</id><value> None</value></automation_type>
+											<is_automated>false</is_automated>
+											<steps>&lt;p&gt;Перевірити розмір&lt;/p&gt;</steps>
+											<expected>&lt;p&gt;589х54&lt;/p&gt;</expected>
+									</custom>
+								<is_converted>1</is_converted>
+			</case>
+															<case>
+				<id>C23</id>
+				<title>Перевірка кольору поля &quot;Ваше імʼя&quot;</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+								<assignedto>Viktoriia Viktoriia</assignedto>
+												<estimate>240</estimate>
+																								<references></references>
+												<labels>color</labels>
+								<automation>No automation attached</automation>
+												<custom>
+											<automation_type><id>0</id><value> None</value></automation_type>
+											<is_automated>false</is_automated>
+											<steps>&lt;p&gt;Перевірити колір&lt;/p&gt;</steps>
+											<expected>&lt;p&gt;Чорні букви на білому фоні&lt;/p&gt;</expected>
+									</custom>
+								<is_converted>1</is_converted>
+			</case>
+															<case>
+				<id>C24</id>
+				<title>Перевірка можливості вводу букв у поле номеру телефону</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+								<assignedto>Viktoriia Viktoriia</assignedto>
+												<estimate>240</estimate>
+																								<references></references>
+												<labels>search</labels>
+								<automation>No automation attached</automation>
+												<custom>
+											<automation_type><id>0</id><value> None</value></automation_type>
+											<is_automated>false</is_automated>
+											<steps>&lt;p&gt;Ввести букви: апроов&lt;/p&gt;</steps>
+											<expected>&lt;p&gt;Неможливо ввести букви&lt;/p&gt;</expected>
+									</custom>
+								<is_converted>1</is_converted>
+			</case>
+															<case>
+				<id>C25</id>
+				<title>Перевірка розміру поля &quot;Повідомлення&quot;</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+								<assignedto>Viktoriia Viktoriia</assignedto>
+												<estimate>240</estimate>
+																								<references></references>
+												<labels>search</labels>
+								<automation>No automation attached</automation>
+												<custom>
+											<automation_type><id>0</id><value> None</value></automation_type>
+											<is_automated>false</is_automated>
+											<steps>&lt;p&gt;Перевірити розмір&lt;/p&gt;</steps>
+											<expected>&lt;p&gt;589х121&lt;/p&gt;</expected>
+									</custom>
+								<is_converted>1</is_converted>
+			</case>
+															<case>
+				<id>C26</id>
+				<title>Перевірка розміру кнопки &quot;Прикріпити документ&quot;</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+								<assignedto>Viktoriia Viktoriia</assignedto>
+												<estimate>240</estimate>
+																								<references></references>
+												<labels>buttomn</labels>
+								<automation>No automation attached</automation>
+												<custom>
+											<automation_type><id>0</id><value> None</value></automation_type>
+											<is_automated>false</is_automated>
+											<steps>&lt;p&gt;Перевірити розмір&lt;/p&gt;</steps>
+											<expected>&lt;p&gt;214х36&lt;/p&gt;</expected>
+									</custom>
+								<is_converted>1</is_converted>
+			</case>
+								</cases>
+							</section>
+	</sections>
+</suite>
